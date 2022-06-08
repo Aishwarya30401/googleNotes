@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/1935d064dd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="demo.css">
+</head>
+<body>
+
+<!-- ais -->
+<!-- <div class="dropdown">
+    <botton myFunction()" class="dropbtn"></botton>
+    <div id="myDropdown">
+      <a href="#"> <button id="${index}"onclick="deleteNote(this.id)" class="note-btn" style="background-color:#f2f2f2">Delete </button></a>
+      <a href="#"><button id="${index}"onclick="editNote(this.id)" class="note-btn edit-btn">Edit </button></a>
+    </div>
+  </div>
+   -->
+
+
+
+    <header>
+        <div class="container">
+            <form action="">
+                
+                <input type="text" id="note-title" placeholder="Note title">
+                <textarea id="note-text" placeholder="Note Details"></textarea> 
+                <button id="add-btn">Save Note</button>
+            
+            </form>
+        </div>
+    </header>
+
+    <section>
+        <div class="container">
+            <div id="notes">
+        
+                    <div class="note">
+                        <p class="note-counter">Note ${index + 1}</p>
+                        <h3 class="note-title"> $element.title </h3>
+                        <p class="note-text"> $element.text</p>
+                        <button class="note-btn">Delete Note</button>
+                        <button class=" edit-btn">edit Note</button>
+                    </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- modal -->
+    
+        
+        <!-- Trigger/Open The Modal -->
+        <!-- <div id="note">Open Modal</div> -->
+        
+        <!-- The Modal -->
+        <div id="note" class="note">
+        <div class="modal-content"></div>
+          <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close">&times;</span>
+      
+                     <h3 class="note-title"> $element.title </h3>
+                                <p class="note-text"> $element.text</p>
+                                <button class="note-btn">Delete Note</button>
+                                <button class=" edit-btn">edit Note</button>
+              
+          </div>
+        
+                 
+        </div>
+        
+        <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+        
+        // Get the button that opens the modal
+        var btn = document.getElementById("note");
+        
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+        
+        // When the user clicks the button, open the modal 
+        btn.onclick = function() {
+          note.style.display = "block";
+        }
+        
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+          note.style.display = "none";
+        }
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+          if (event.target == note) {
+            note.style.display = "none";
+          }
+        }
+        </script>
+      
+
+    
+
+    <script src="demo.js"></script>
+
+
+</body>
+</html>
