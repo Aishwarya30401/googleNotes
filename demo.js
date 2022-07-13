@@ -8,7 +8,7 @@ addBtn.addEventListener("click", function(e) {
   let addTxt = document.getElementById("note-text");
 
     if (addTitle.value == "" || addTxt.value == "") {
-        return alert("Please add Note Title and Details")
+       
     }
 
   let notes = localStorage.getItem("notes");
@@ -99,3 +99,4 @@ function deleteNote(index) {
 
 
 showNotes(); 
+
