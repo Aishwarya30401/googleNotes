@@ -33,14 +33,14 @@ function showNotes() {
   let notes = localStorage.getItem("notes");
   if (notes == null) {
     notesObj = [];
-  } else {
+  }
+   else {
     notesObj = JSON.parse(notes);
   }
   let html = "";
   notesObj.forEach(function(element, index) {
     html += `
-        <div class="note" style="color:black">
-           
+        <div class="note" style="color:blac"> 
             <h3 class="note-title"> ${element.title} </h3>
             <p class="note-text"> ${element.text}</p>
             <button id="${index}"onclick="deleteNote(this.id)" class="note-btn">Delete Note</button>
@@ -65,6 +65,9 @@ function deleteNote(index) {
         localStorage.setItem("notes", JSON.stringify(notesObj));
        showNotes();
     }
+
+
+
 
 // }
 
