@@ -6,21 +6,56 @@
     <link rel="stylesheet" href="demo.css">
 </head>
 <body>
+<!-- <body onclick="location.href='https://google.com'"> -->
    <div class="di">
      <img src="menu.png" class="menu">
      <img src="icon.png" class="icon">
      <h2 class="hd">Keep</h2>
      <button  class="search"> <p class="css">Search</p>
-       <!-- <label class="search-icon"></label> --> </button>
+       <img src="search icon...png" class="ico"></label> 
+    </button>
    </div>
 <hr>
+
+<!-- side pare -->
+<div class="side-menu">
+<div class="labels" id="box">
+<p>Notes</p>
+<img src="blub.png" class="icons">
+</div>
+
+<div class="labels">
+    <p>Remainder</p>
+    <img src="bell.png" class="icons">
+    </div>
+
+
+    <div class="labels">
+        <p>Edit labels</p>
+        <img src="pencil.png" class="icons">
+        </div>
+
+        <div class="labels">
+            <p>Archive</p>
+            <img src="archive.webp" class="icons">
+            </div>
+
+            <div class="labels">
+                <p>Trash</p>
+                <img src="trash.png" class="icons">
+                </div>
+
+
+
+</div>
+<!--  -->
     <header>
         <div class="container">
             <form action="">
                 
-                <input type="text" id="note-title" placeholder=" Title">
-                <textarea id="note-text" placeholder="Tack a note..."></textarea> 
-                <button id="add-btn">Save Note</button>
+                <input type="text" id="title" placeholder=" Title">
+                <textarea id="text" placeholder="Tack a note..."></textarea> 
+                <button id="save">Save Note</button>
             
             </form>
         </div>
@@ -31,11 +66,10 @@
             <div id="notes">
         
                     <div class="note">
-                        <p class="note-counter">Note ${index + 1}</p>
-                        <h3 class="note-title"> $element.title </h3>
-                        <p class="note-text"> $element.text</p>
+                        <h3 class="title"> $element.title </h3>
+                        <p class="text"> $element.text</p>
                         <button class="note-btn">Delete Note</button>
-                        <button class=" edit-btn">edit Note</button>
+                        <button class="edit-btn">edit Note</button>
                     </div>
                 
             </div>
@@ -55,8 +89,8 @@
           <div class="modal-content">
             <span class="close">&times;</span>
       
-                     <h3 class="note-title"> $element.title </h3>
-                                <p class="note-text"> $element.text</p>
+                     <h3 class="title"> $element.title </h3>
+                                <p class="text"> $element.text</p>
                                 <button class="note-btn">Delete Note</button>
                                 <button class=" edit-btn">edit Note</button>
               
