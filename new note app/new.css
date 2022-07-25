@@ -1,0 +1,210 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    min-width:200px;
+    max-width:500px;
+    min-height:180px;
+    max-height:200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    right:100px;
+}
+
+header form {
+    display: flex;
+    flex-direction: column;
+    width: 30rem;
+    position: relative;
+    top:10px;
+}
+
+form > * {
+    outline: none;
+    font-size: 1.2rem;
+    padding: 7px;
+    border: 1px solid #777;
+    border-radius: 3px;
+    position: relative;
+    left: 10px;
+    bottom: 30px;
+}
+
+form textarea {
+    padding: 7px 0 30px 5px;
+    font-size: 1.2rem;
+    font-family: inherit;
+}
+
+::placeholder {
+    font-size: 1rem;
+}
+
+form button {
+    background-color: var(--color-sec);
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+form button:hover {
+    background-color: var(--color-primary);
+}
+
+.note {
+    padding: 1rem;
+    /* border: 1px solid #777; */
+    background-color: #fff;
+    border-radius: 3px;
+    margin: 1rem 0;
+
+}
+
+.note-counter,
+.note-text {
+    font-size: 1.2rem;
+}
+
+.note-title {
+    
+    font-size: 1.5rem;
+}
+
+.note-btn {
+    padding: 7px;
+    font-size: 1rem;
+    background-color: #f2f2f2;
+    color:black;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    left:200px;
+
+}
+.edit-btn {
+background-color: #f2f2f2;
+color:black;
+}
+#add-btn{
+    width:100px;
+    height:40px;
+    color:black;
+    background-color: #f2f2f2;
+    border:1px solid #f2f2f2;
+    position:relative;
+    bottom:80px;
+    left:350px;
+}
+
+.side-menu{
+    width:320px;
+    height:600px;
+    background-color: white;
+    border:1px solid white;
+    position: fixed;
+}
+.labels{
+    height:50px;
+    border:1px solid white;
+    background-color: white; 
+    border-radius: 30px;  
+}
+.labels:hover{
+    background-color:#F2F2F2;
+}
+.labels>p{
+    font-size: 15px;
+    position: relative;
+    left:120px;
+    top:20px;
+}
+.icons{
+    width:24px;
+    height:24px;
+    position: relative;
+    left:20px;
+}
+.menu{
+    width:30px;
+    height:30px;
+    position: relative;
+    left:30px;
+    top:10px;
+}
+.icon{
+    height:42px;
+    width:42px;
+    position: relative;
+    left:40px;
+    top:10px;
+
+}
+.hd{
+    margin-left:130px;
+    color:black;
+    position: relative;
+    bottom:25px ;
+
+}
+.search{
+width:700px;
+height:50px;
+background-color: #f2f2f2;
+border-bottom: 1px solid gray;
+border-top:none;
+border-right:none;
+border-left:none;
+border-radius: 10px;
+position: relative;
+bottom: 60px;
+left:300px;
+}
+.css{
+    color:grey;
+    font-size:17px;
+    position:relative;
+    right:270px;
+    top:10px;
+}
+.ico{
+    width:20px;
+    height:20px;
+    position:relative;
+    right:330px;
+    bottom:10px;
+}
+header form {
+    display: flex;
+    flex-direction: column;
+    width: 30rem;
+}
+hr{
+    position: relative;
+    bottom:50px;
+}
+.note{
+    min-width:200px;
+    max-width:500px;
+    min-height:180px;
+    max-height:200px;
+    border: 1px solid gray;
+    position:relative;
+    
+}
+.notes{
+    position: relative;
+    left:200px;
+}
